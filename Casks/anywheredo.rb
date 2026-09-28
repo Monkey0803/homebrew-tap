@@ -2,8 +2,7 @@ cask "anywheredo" do
   version "1.0.0"
   sha256 "0982fbe8618c06cde51742094511d187e94e23676de378f8dc531ce1936b26a1"
 
-  url "https://github.com/Monkey0803/anywheredo/releases/download/v#{version}/AnywhereDo-#{version}-universal.zip",
-      verified: "github.com/Monkey0803/anywheredo/"
+  url "https://github.com/Monkey0803/anywheredo/releases/download/v#{version}/AnywhereDo-#{version}-universal.zip"
   name "AnywhereDo"
   desc "Selection-triggered suggestion popup for macOS"
   homepage "https://github.com/Monkey0803/anywheredo"
