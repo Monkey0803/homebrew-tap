@@ -18,6 +18,10 @@ macOS 菜单栏小工具：选中一段文字，卡片直接贴在选区正下�
 
 安装后首次使用划词需要授予**辅助功能**权限（系统设置 → 隐私与安全性 → 辅助功能）。
 
+> 本 App 未做 Apple 公证，Homebrew 会把下载物的隔离标记传播到安装后的 App，
+> 首次打开若被 Gatekeeper 拦住（「无法验证开发者」/「已损坏」），请**右键 → 打开**，
+> 或执行 `xattr -dr com.apple.quarantine /Applications/AnywhereDo.app`。
+
 卸载并清理配置：
 
 ```bash
