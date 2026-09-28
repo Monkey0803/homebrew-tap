@@ -4,12 +4,16 @@
 
 ```bash
 brew tap monkey0803/tap
-brew trust monkey0803/tap          # Homebrew 7+ 需要显式信任第三方 tap
 brew install --cask anywheredo
 ```
 
-这一步 `brew trust` 是新版 Homebrew 的安全策略：非官方 tap 里的 cask 必须显式信任后才会被加载，
-否则会报 `Refusing to load cask … from untrusted tap`。
+若报 `Refusing to load cask … from untrusted tap`：这是新版 Homebrew 的安全策略——非官方 tap 里的 cask
+必须显式信任后才会被加载，执行下面两行即可（旧版 Homebrew 没有 `trust` 命令，也不需要这一步）：
+
+```bash
+brew trust monkey0803/tap
+brew install --cask anywheredo
+```
 
 macOS 菜单栏小工具：选中一段文字，卡片直接贴在选区正下方给出可点的建议。
 
